@@ -79,7 +79,7 @@ const main = async () => {
             logger.error(`E-Mail Failed to ${toEmail} with reason of ${ex.toString}`);
         }
     }
-    if (xReboot || result == "[SUCCESS]") {
+    if (xReboot || result == "[FAILURE]") {
         try {
             await hostReboot();
             logger.info(`${pingAddr} Reboot Executed SUCCESSFULLY.`);
