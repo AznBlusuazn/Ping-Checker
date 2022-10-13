@@ -1,4 +1,4 @@
-//Version 1.00 - 2022.10.12
+//Version 1.0.1 - 2022.10.12
 
 const dotenv = require("dotenv");
 const smtp = require("nodemailer");
@@ -79,7 +79,7 @@ const main = async () => {
             logger.error(`E-Mail Failed to ${toEmail} with reason of ${ex.toString}`);
         }
     }
-    if (xReboot) {
+    if (xReboot || result == "[SUCCESS]") {
         try {
             await hostReboot();
             logger.info(`${pingAddr} Reboot Executed SUCCESSFULLY.`);
