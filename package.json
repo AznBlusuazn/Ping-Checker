@@ -1,0 +1,26 @@
+{
+  "name": "ping-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AznBlusuazn/Ping-Checker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AznBlusuazn/Ping-Checker/issues"
+  },
+  "homepage": "https://github.com/AznBlusuazn/Ping-Checker#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fs-extra": "^10.1.0",
+    "node-logger": "^0.0.1",
+    "nodemailer": "^6.8.0",
+    "ping": "^0.4.2"
+  }
+}
